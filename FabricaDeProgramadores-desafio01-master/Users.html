@@ -1,0 +1,106 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="js/GerenciadorCinema.js"></script>
+    <title>Cinema-HT</title>
+</head>
+
+<body id="onload-user" >
+    <header>
+
+        <h2>Gerência de Usuarios</h2>
+
+    </header>
+    <nav id="menu">
+        <h1>Cinema High Tech</h1>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="Sessao.html">
+                <li>Sessões</li>
+            </a>
+            <a href="Salas.html">
+                <li>Salas</li>
+            </a>
+            <a href="Client.html">
+                <li>Clientes</li>
+            </a>
+            <a href="Filmes.html">
+                <li>Filmes</li>
+            </a>
+            <a href="Users.html">
+                <li>Usuários</li>
+            </a>
+            <a href="index.html" >
+                <li>Logout</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        <div class="mensagens" id="mensagem">
+            <img
+              src="img/close.svg"
+              alt="Botão para fechar janela"
+              id="msg1"
+            />
+            <span value="error" id="textoMensagem"></span>
+          </div>
+          <div class="msgSucess" id="msgSecess">
+            <img
+              src="img/close.svg"
+              alt="Botão para fechar janela"
+              id="msg2"
+            />
+            <span id="text"></span>
+          </div>
+        <div>
+            <h1>Novo Usuario</h1>
+        </div>
+  
+
+        <div id="panel-00" >
+            <span class="edit" id="temp"></span>
+            <span class="edit" id="temp1"></span>
+            <div id="card-01">
+                <label for="username">Nome do Usuario</label>
+                <input type="text" placeholder="Nome do usuario" id="username" />
+            </div>
+            <div id="card-02">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email" id="email" />
+            </div>
+            <div id="card-03">
+                <label for="password">Senha</label>
+                <input type="password" placeholder="Senha" id="password" />
+            </div>
+            <div id="card-04">
+                <label for="password-2">Repita a senha</label>
+                <input type="password" placeholder="Repita a senha" id="password-2" />
+            </div>
+            
+
+            <button name="save-user" id="save"> Salvar </button>
+            <button name="cancel-user" id="cancel"> Cancelar </button>
+        </div>
+
+
+        <div class="table-cliente">
+            <h1>Usuários Cadastrados</h1>
+            <table class="table-tabulation">
+                <thead>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Editar</th>
+                    <th>Excluir</th>
+                </thead>
+            </table>
+            <div id="table-body" >  
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

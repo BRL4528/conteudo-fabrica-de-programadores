@@ -1,0 +1,252 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    font-weight: 90;
+  
+}
+h1{
+    margin: 0px 0px 30px 0px;
+    font-weight: 90;
+}
+h2 {
+    margin: 5px 0 0 10px;
+    font-weight: 90;
+}
+header {
+    float: right;
+    width: 75%;
+    height: 50px;
+    color: white;
+    background-color: rgb(42, 55, 73);
+  
+}
+
+main {
+    height: 50%;
+    width: 75%;
+    float: right;
+    padding: 40px;
+    box-sizing: border-box;
+    transition: width 0.5s;
+}
+#panel-00 {
+    width: 70%;
+}
+#panel-00 div {
+    margin: 20px 0px;
+   text-align: left;
+}
+#panel-00 input {
+    margin-left: 3%;
+    width: 70%;
+    padding: 10px 0px;
+    border: none;
+    border-bottom: 1px solid gray;
+    
+}
+fieldset {
+    margin-bottom: 15px;
+}
+fieldset div {
+    text-align: left;
+    padding: 20px;
+}
+select {
+    margin-left: 3%;
+    width: 70%;
+    padding: 2px 0px;
+    border-radius: 5px;
+    background-color: white;
+
+}
+#save {
+    width: 70px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color:  rgb(42, 55, 73);
+    margin-bottom: 15px;
+}
+
+#cancel{
+    width: 85px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 2px;
+    border: none;
+    color: white;
+    background-color: red;
+    margin-bottom: 15px;
+
+}
+#receptorClient{
+  margin-top: 10px;
+}
+
+nav li:hover {
+    background-color: rgb(42, 55, 73);
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+nav li {
+    text-align: left;
+    padding: 20px;
+    list-style: none;
+}
+nav ul {
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color: #0DDCFF ;
+    float: left;
+    width: 25%;
+    height: 100%;
+    padding: 20px 0px;
+    text-align: center;
+    color: white;
+    box-sizing: border-box;
+    position: fixed;
+    box-shadow: 0px 0px 7px rgb(42, 55, 73);
+    overflow: hidden;
+    transition: width 0.5s height 0.5s;
+}
+.table-client {
+ text-align: left;
+}
+.table-tabulation{
+ margin: none;
+ background-color: rgb(42, 55, 73);
+}
+th{
+    width: 180px;
+    height: 40px;
+    text-align: center;
+    color: white;  
+    font-weight: 90;
+}
+td{
+    width: 180px;
+    height: 40px;
+    text-align: center; 
+    font-weight: 90;
+}
+.edit{
+    color: rgba(209, 47, 47, 0.705);
+    font-size: 20px;
+    text-decoration: underline;
+
+    
+}
+
+
+.mensagens {
+    display: none;
+    background-color: rgb(199, 80, 80);
+    color: white;
+    padding: 20px;
+    opacity: 0.9;
+    position: absolute;
+    width: 60%;
+    animation: slide-mensagem 1s;
+  }
+  
+  .mensagens.show {
+    display: block;
+
+  }
+
+  
+  .mensagens img {
+    cursor: pointer;
+    width: 35px;
+    float: right;
+  }
+
+
+  .msgSucess {
+    display: none;
+    background-color: rgb(80, 199, 116);
+    color: white;
+    padding: 20px;
+    opacity: 0.9;
+    position: absolute;
+    width: 60%;
+    animation: slide-mensagem 1s;
+  }
+  
+  .msgSucess.show {
+    display: block;
+  }
+  
+  .msgSucess img {
+    cursor: pointer;
+    width: 35px;
+    float: right;
+    
+  }
+
+  @keyframes slide-mensagem {
+    from {
+      transform: translate3d(0px, -50px, 0px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0px, 0px, 0px);
+      opacity: 0.9;
+    }
+  }
+  #table-body img {
+      cursor: pointer;
+      height: 30px;
+      width: 30px;
+  }
+
+  .card {
+    display:block;
+    width:45px;
+    height:40px;
+    margin: 10px;
+    float:left;
+    list-style-type:none;
+    background-color:rgb(55, 138, 19);
+    border-radius: 3px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    
+    
+  }
+  
+  .lex {
+    background-color:rgb(55, 138, 19);
+    color: white;
+    cursor: pointer;
+  }
+  
+  ul {
+    margin:0;
+    padding:0;
+  }
+.login-login{
+    text-align: center;
+    
+}
+.input-login{
+    margin: 10px;
+    padding: 5px;
+}
+a{
+  text-decoration: none;
+  color: rgb(56, 124, 202);
+  margin-right: 10px;
+}
+.login-body{
+  background-color: rgb(200, 200, 200);
+}

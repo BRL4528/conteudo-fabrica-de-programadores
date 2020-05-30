@@ -1,0 +1,96 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./css/style.css">
+    <script type="module" src="js/GerenciadorCinema.js"></script>
+    <title>Cinema-HT</title>
+</head>
+
+<body id="onload-sala" >
+    <header>
+
+        <h2>Gerência de Salas</h2>
+
+    </header>
+    <nav id="menu">
+        <h1>Cinema High Tech</h1>
+        <ul>
+            <a href="Reservas.html">
+                <li>Reservas</li>
+            </a>
+            <a href="Sessao.html">
+                <li>Sessões</li>
+            </a>
+            <a href="Salas.html">
+                <li>Salas</li>
+            </a>
+            <a href="Client.html">
+                <li>Clientes</li>
+            </a>
+            <a href="Filmes.html">
+                <li>Filmes</li>
+            </a>
+            <a href="Users.html">
+                <li>Usuários</li>
+            </a>
+            <a href="index.html" >
+                <li>Logout</li>
+            </a>
+        </ul>
+    </nav>
+    <main>
+        
+        <div class="mensagens" id="mensagem">
+            <img
+              src="img/close.svg"
+              alt="Botão para fechar janela"
+              id="msg1"
+            />
+            <span value="error" id="textoMensagem"></span>
+          </div>
+          <div class="msgSucess" id="msgSecess">
+            <img
+              src="img/close.svg"
+              alt="Botão para fechar janela"
+              id="msg2"
+            />
+            <span id="text"></span>
+          </div>
+        <div>
+            <h1>Nova Sala</h1>
+        </div>
+  
+
+        <div id="panel-00" >
+            <span class="edit" id="temp"></span>
+            <span class="edit" id="temp1"></span>
+            <div id="card-02">
+                <label for="nameRoom">Nome da Sala</label>
+                <input type="text" placeholder="Nome da Sala" id="nameRoom" />
+            </div>
+         
+            
+
+            <button name="save-sala" id="save"> Salvar </button>
+            <button name="cancel-sala" id="cancel"> Cancelar </button>
+        </div>
+
+
+        <div class="table-cliente">
+            <h1>Salas Cadastradas</h1>
+            <table class="table-tabulation">
+                <thead>
+                    <th>Salas</th>
+                    <th></th>
+                    <th></th>
+                
+                </thead>
+            </table>
+            <div id="table-body" >  
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
