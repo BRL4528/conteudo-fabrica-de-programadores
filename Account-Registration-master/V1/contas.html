@@ -1,0 +1,111 @@
+<html>
+
+<head>
+    <title>Cadastro de Empresas</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/financeiroController.css" />
+    <script src="js/financeiroContas.js"></script>
+</head>
+
+<body onload="contasController.atualizarEstado()">
+    <div class="bar-primari">
+
+        <img src="img/dial.svg" class="btn-primari" id="btn-menu" alt="Botão para abrir menu"
+            onclick="contasController.abrirMenu()">
+        <h2 class="menu-primari">Menu</h2>
+    </div>
+
+
+    <nav id="menu">
+        <div class="container">
+            <div class="sub-menu">
+                <img src="img/icon.svg" alt="Botão de fechar menu" class="btn-menu-fechar" id="btn-fechar"
+                    onclick="contasController.fecharMenu()" />
+            </div>
+
+
+            <a href="empresas.html">
+                <li>Empresas</li>
+            </a>
+
+            <a href="contas.html">
+                <li>Contas</li>
+            </a>
+
+        </div>
+    </nav>
+
+    <main id="main">
+        <div class="mensagens" id="mensagens">
+            <img src="img/list.svg" alt="Botão para fechar janela" onclick="fecharMensagem()" />
+            <span id="textoMensagem"></span>
+        </div>
+
+        <div id="card" class="menu-main">
+
+            <h1>Cadastro de Contas</h1>
+
+            <form>
+                <div>
+                    <input type="number" placeholder="Valor" id="valor"
+                        onkeyup="maskIt(this,event,'###.###.###,##',true,{pre:'R$'})" />
+                </div>
+
+                <div>
+                    <label for="tipo">Tipo:</label>
+
+                    <select name="tipo" id="tipo">
+                        <option value="">Selecione...</option>
+                        <option value="Despesa">Despesa</option>
+                        <option value="Receita">Receita</option>
+                    </select>
+                </div>
+
+                <div>
+
+                    <label for="paga">Paga?</label>
+                    <input type="checkbox" value="paga" id="paga" />
+                </div>
+
+                <div>
+                    <label for="receptor">Receptor:</label>
+
+                    <select name="receptor" id="receptor">
+                        <option value="">Selecione...</option>
+                    </select>
+                </div>
+
+                <div class="meio">
+                    <button type="button" onclick="contasController.salvar()">
+                        Salvar
+                    </button>
+                    <button type="button" onclick="contasController.cancelar()">
+                        Cancelar
+                    </button>
+                    <hr>
+                </div>
+
+
+
+                <table class="tabela">
+                    <thead>
+                        <th>Valor</th>
+                        <th>Tipo</th>
+                        <th>Paga?</th>
+                        <th>Receptor</th>
+                        <th></th>
+                        <th></th>
+                    </thead>
+                    <tbody id="tabela-corpo"></tbody>
+                </table>
+                <div id="divisor-tabela">
+
+                </div>
+
+
+        </div>
+        </form>
+    </main>
+</body>
+
+</html>

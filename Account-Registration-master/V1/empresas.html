@@ -1,0 +1,97 @@
+<html>
+
+<head>
+    <title>Financeiro</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/financeiroController.css">
+    <script src="js/financeiroController.js"></script>
+    <script src="js/controleBarramenu.js"></script>
+</head>
+
+
+<body onload="gerenciador.atualizar()">
+    <div class="bar-primari">
+
+        <img src="img/dial.svg" class="btn-primari" id="btn-menu" alt="Botão para abrir menu" onclick="abrirMenu()">
+        <h2 class="menu-primari">Menu</h2>
+    </div>
+
+    <nav id="menu">
+        <div class="container">
+
+
+            <div class="sub-menu">
+                <img src="img/icon.svg" class="btn-menu-fechar" id="btn-fechar" onclick="fecharMenu()"
+                    alt="Botão para fechar menu">
+            </div>
+            <a href="">
+                <li>Empresa</li>
+            </a>
+
+            <a href="contas.html">
+                <li>Conta</li>
+            </a>
+
+
+        </div>
+    </nav>
+    <main id="main">
+        <div class="mensagens" id="mensagens">
+            <img src="img/icon.svg" alt="Botão para fechar Janela" onclick="fecharJanela()">
+            <span id="textomensagens"></span>
+        </div>
+        <div id="card" class="menu-main">
+            <h2>Controle de Finanças</h2>
+            <form>
+                <fieldset>
+                    <div class="inputNome">
+                        <label for="inputNome">Nome</label>
+
+                        <input type="text" name="nome" id="inputNome">
+                    </div>
+
+                    <div class="inputEndereco">
+                        <label for="inputEndereco">Endereço</label>
+                        <input type="text" name="endereco" id="inputEndereco">
+
+                    </div>
+                    <div class="inputCnpj">
+                        <label for="inputCnpj">CNPJ</label>
+                        <input type="number" name="cnpj" id="inputCnpj">
+                    </div>
+                    <div class="inputRazao">
+                        <label for="inputRazao">Razão Social</label>
+                        <input type="text" name="razao" id="inputRazao">
+                    </div>
+                    <div class="btn-salvar" >
+                        <button type="button" onclick="gerenciador.salvar()">Salvar</button>
+
+                    </div>
+                </fieldset>
+
+
+                <fieldset class="lista-menu">
+
+
+                    <table class="tabela">
+                        <thead>
+                            <th></th>
+                            <th></th>
+                            <th></th>
+                            <th>Nome</th>
+                            <th>Endereço</th>
+                            <th>CNPJ</th>
+                            <th>Razão social</th>
+
+                        </thead>
+                        <tbody id="tabela"></tbody>
+                    </table>
+                </fieldset>
+        </div>
+
+        </form>
+    </main>
+</body>
+
+
+</html>

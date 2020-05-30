@@ -1,0 +1,193 @@
+body{
+    font-family: sans-serif;
+    margin: auto;
+}
+img{
+    height: 20px;
+    width: 20px;
+}
+
+nav{
+border: 1px black;
+float: left;
+width: 0%;
+height: 100%;
+padding: 20px 0px;
+text-align: center;
+color: red;
+box-sizing: border-box;
+position: fixed;
+box-shadow: 5px 0px 10px gray;
+overflow: hidden;
+transition: width 1s;
+margin-top:  60px;
+}
+button{
+  width: 100px;
+  height: 25px;
+  border-radius: 10px;
+  background-color: rgb(105, 104, 104);
+  color: aliceblue;
+  border: none;
+}
+.bar-primari{
+    position: fixed;
+    color: white;
+    width: 100%;
+    background-color: rgb(238, 63, 63);
+    
+}
+#divDivisoria{
+  margin: 0 0 0 0 ;
+  padding: 0.5px;
+  width: 59%;
+  position: absolute;
+  background-color: rgb(211, 114, 114);
+
+}
+#paga{
+ width: 50px;
+}
+.btn-salvar{
+  text-align: center;
+ 
+}
+
+.btn-primari{
+    margin-left: 10px;
+    padding: 5px;
+    margin-top: 10px;
+}
+.menu-primari{
+   margin-left: 50px;
+   margin-top: -30px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+nav li {
+    padding: 20px;
+    list-style: none;
+}
+nav li:hover{
+    color: white;
+    background-color: rgb(238, 63, 63);
+}
+
+main{
+    width: 100%;
+    float: right;
+    padding: 100px;
+    box-sizing: border-box;
+    transition: width 1s;
+}
+main h1{
+    text-align: center;
+}
+main h2{
+    text-align: center;
+}
+form{
+    width: 70%;
+    margin: auto;
+}
+form div{
+    margin: 20px 0px;
+}
+form input{
+    width: 100%;
+    padding: 7px;
+}
+form td{
+    padding: 15px;
+    text-align: center;
+}
+.lista-menu{
+    margin-top: 5px;
+}
+
+
+/* REFAZER TUDO DEPOIS */
+.meio {
+    text-align: center;
+  }
+  
+  .btn-menu-abrir {
+    opacity: 0;
+  }
+  
+  .btn-menu-abrir-exibir {
+    opacity: 1;
+  }
+  
+  .exibir-menu {
+    width: 20%;
+  }
+  
+  .fechar-menu {
+    width: 0%;
+  }
+
+  .aumentar-main {
+    width: 80%;
+  }
+  
+  .mensagens {
+    display: none;
+    background-color: rgb(199, 80, 80);
+    color: white;
+    padding: 20px;
+    opacity: 0.9;
+    position: absolute;
+    width: 60%;
+    animation: slide-mensagem 1s;
+  }
+  
+  .mensagens.show {
+    display: block;
+  }
+  
+  .mensagens img {
+    cursor: pointer;
+    width: 10px;
+    float: right;
+  }
+  
+  @keyframes slide-mensagem {
+    from {
+      transform: translate3d(0px, -50px, 0px);
+      opacity: 0;
+    }
+  
+    to {
+      transform: translate3d(0px, 0px, 0px);
+      opacity: 0.9;
+    }
+  }
+  
+  form button:hover {
+    background-color: rgb(209, 44, 66);
+    color: black;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 600px) {
+    nav {
+      width: 0%;
+    }
+  
+    main {
+      width: 100%;
+    }
+  
+    .btn-menu-abrir {
+      opacity: 1;
+    }
+  
+    .btn-menu-fechar {
+      opacity: 1;
+    }
+  }
